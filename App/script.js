@@ -35,3 +35,22 @@ function Finished_Sorting() {
 		x[i].disabled = false;
 
 }
+
+function generateBars(n = -1) {
+	bars = [];
+	let container = document.getElementById("container");
+	n = n < 0 ? Math.random() * 20 : n;
+	for (let i = 0; i < n; i++) {
+		bars.push('<div class="bar" id="' + i + '" style="height:' + Math.floor(2 + Math.random() * 98) + '%"></div>');
+	}
+	container.innerHTML = bars.join('');
+}
+
+
+function Sleep(ms) {
+	return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function MapRange(value, in_min, in_max, out_min, out_max) {
+	return (value - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
