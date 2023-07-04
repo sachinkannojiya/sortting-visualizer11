@@ -29,3 +29,35 @@
 #bars, #delay{
 	vertical-align: middle;
 }
+.header{
+	display: flex;
+	flex-wrap: wrap;
+	font-weight: bold;
+	background-color: #fd0081;
+	margin: 0;
+	color: white;
+	padding: 1vw 1vw 2vw 1vw;
+	margin-bottom: 2vw;
+}
+h1{
+	font-size: 3vw;
+	font-family: Pacifico, cursive;
+	font-weight: lighter;
+	width: 25%
+	text-align: center;
+}
+.range{
+	justify-content: space-evenly;
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: wrap;
+}
+.slide{
+	margin: 0vw 1vw;
+}
+.bar{
+	border: 0.05vw solid black;
+	width:0.6vw;
+	margin:0.1vw;
+	background-color: #fd0081;
+}
